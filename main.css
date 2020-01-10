@@ -1,0 +1,113 @@
+body {
+  margin-top: 0px;
+  margin-left: 0px;
+  background-color: deepskyblue;
+}
+
+.rotate180 {
+  transform: rotate(180deg);
+}
+
+.rotate90 {
+  transform: rotate(90deg);
+}
+
+.rotate270 {
+  transform: rotate(-90deg);
+}
+
+#testcard {
+  position: relative;
+  padding: 0px;
+  border: none;
+  width: 3.5in;
+  height: 2.25in;
+  background-color: white;
+  margin: 0px 0px 0px 0px;
+}
+
+#testcard #thumb {
+  margin: 10px 0px 10px 10px;
+  padding: 0px;
+  width: 1.25in;
+  height: 1.5in;
+  border-style: none;
+  float: left;
+  border-width: 1px;
+  border-color: black;
+  border-radius: 3%;
+  box-shadow: 5px 5px 4px 0px #666;
+  z-index: 3;
+  position: absolute;
+}
+
+#testcard #header {
+  height: 0.75in;
+  width: 3.5in;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+}
+
+#testcard #right {
+  float: right;
+  width: 2.2in;
+}
+
+#testcard h2 {
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 550;
+  line-height: 26.4px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #8b1812;
+}
+
+#testcard h3 {
+  font-family: Verdana, Geneva, sans-serif;
+  text-align: center;
+  font-weight: 500;
+  font-size: 14px;
+}
+.card #thumb {
+  width: 1.5in;
+  height: 1.25in;
+  float: right;
+}
+
+.card #header {
+  width: 1in;
+  float: left;
+}
+
+#cards {
+  position: relative;
+  overflow: hidden;
+  margin: 397px 0px 2.375in 0px;
+  padding: 0px;
+  border: none;
+  width: 473px;
+  height: 3.5in;
+  background-color: dimgray;
+}
+
+#card1 {
+  margin-left: 25px;
+  width: 2.25in;
+  height: 3.5in;
+  background-color: snow;
+  float: left;
+}
+
+#card2 {
+  margin: 0px 0px 0px 0px;
+  width: 2.25in;
+  height: 3.5in;
+  background-color: rgb(51, 38, 170);
+  float: left;
+  margin-left: 15px;
+}
