@@ -9,14 +9,24 @@ body {
 }
 
 .rotate90 {
-  transform: rotate(90deg);
+  transform: translateY(-100%) rotate(90deg);
+  transform-origin: bottom left;
 }
 
 .rotate270 {
   transform: rotate(-90deg);
 }
 
-#testcard {
+.cardcontainer {
+  position: relative;
+  padding: 0px;
+  border: none;
+  width: 3.5in;
+  height: 2.25in;
+  margin: 0px 0px 0px 0px;
+}
+
+.cardbody {
   position: relative;
   padding: 0px;
   border: none;
@@ -26,22 +36,22 @@ body {
   margin: 0px 0px 0px 0px;
 }
 
-#testcard #thumb {
+.cardbody .thumb {
   margin: 10px 0px 10px 10px;
   padding: 0px;
-  width: 1.25in;
-  height: 1.5in;
   border-style: none;
-  float: left;
   border-width: 1px;
   border-color: black;
   border-radius: 3%;
   box-shadow: 5px 5px 4px 0px #666;
-  z-index: 3;
   position: absolute;
+  float: left;
+  z-index: 3;
+  height: 1.5in;
+  width: 1.25in;
 }
 
-#testcard #header {
+.cardbody .header {
   height: 0.75in;
   width: 3.5in;
   position: absolute;
@@ -50,38 +60,33 @@ body {
   z-index: 1;
 }
 
-#testcard #right {
+.cardbody .details {
   float: right;
   width: 2.2in;
 }
 
-#testcard h2 {
+.cardbody h2 {
   font-family: Verdana, Geneva, sans-serif;
   font-size: 20px;
   font-style: normal;
   font-variant: normal;
   font-weight: 550;
-  line-height: 26.4px;
+  line-height: 1;
   text-align: center;
   text-transform: uppercase;
   color: #8b1812;
 }
 
-#testcard h3 {
+.cardbody h3 {
   font-family: Verdana, Geneva, sans-serif;
   text-align: center;
   font-weight: 500;
   font-size: 14px;
 }
-.card #thumb {
-  width: 1.5in;
-  height: 1.25in;
-  float: right;
-}
 
-.card #header {
-  width: 1in;
-  float: left;
+.card {
+  width: 2.25in;
+  height: 3.5in;
 }
 
 #cards {
@@ -97,16 +102,12 @@ body {
 
 #card1 {
   margin-left: 25px;
-  width: 2.25in;
-  height: 3.5in;
   background-color: snow;
   float: left;
 }
 
 #card2 {
   margin: 0px 0px 0px 0px;
-  width: 2.25in;
-  height: 3.5in;
   background-color: rgb(51, 38, 170);
   float: left;
   margin-left: 15px;
